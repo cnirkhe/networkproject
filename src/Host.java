@@ -1,4 +1,4 @@
-public class Host {
+public class Host extends Node {
     private int address;
     private Link link;
 
