@@ -4,7 +4,6 @@ public class UDPPacket extends Packet {
     public PacketType type = UDP_PACKET;
 
     public UDPPacket(int payload, Flow flow, int id) {
-        super();
         this.size = payload + self.HEADER_SIZE;
         this.flow = flow;
         this.id = id;

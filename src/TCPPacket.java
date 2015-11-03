@@ -4,7 +4,6 @@ public class TCPPacket extends Packet {
     public PacketType type = TCP_PACKET;
 
     public TCPPacket(int payload, Flow flow, int id) {
-        super();
         this.size = payload + self.HEADER_SIZE;
         this.flow = flow;
         this.id = id;
