@@ -12,7 +12,7 @@ public class InputParser {
     /**
      * Using org.json parsing tools
      */
-    JSONParser parser;
+    private JSONParser parser;
 
     public InputParser() {
         parser = new JSONParser();
@@ -20,7 +20,7 @@ public class InputParser {
 
     /**
      * Method to run for parsing
-     * @param fileLocation Location of JSON object in relation to 
+     * @param fileLocation Location of JSON object in relation to
      */
     public parse(String fileLocation) {
         JSONObject jsonObject = buildJSONObject(fileLocation);

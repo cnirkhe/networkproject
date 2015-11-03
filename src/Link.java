@@ -7,10 +7,7 @@ public class Link {
     
     // constructors
     public Link(int capacity, float transmissionDelay) {
-        this.capacity = capacity;
-        this.transmissionDelay = transmissionDelay;
-        connection_0 = null;
-        connection_1 = null;
+        this(capacity, transmissionDelay, null, null);
     }
     public Link(int capacity, float transmissionDelay, Node node0, Node node1) {
         this.capacity = capacity;
