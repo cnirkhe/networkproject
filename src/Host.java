@@ -29,6 +29,13 @@ public class Host extends Node {
         this.link = link;
     }
 
+
+    // Dummy function for updating. Will eventually change the host based on what happened in
+    // one time interval.
+    public void update(final int intervalTimeMillis) {
+        // pass
+    }
+
 //    /*
 //     * Gets a packet to send across the link.
 //     */

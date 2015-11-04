@@ -10,4 +10,10 @@ public abstract class Flow {
     }
 
     public Flow() {}
+
+    // Dummy function for updating. Will eventually change the flow based on what happened in
+    // one time interval.
+    public void update(final int intervalTimeMillis) {
+        // pass
+    }
 }
