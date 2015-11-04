@@ -22,7 +22,7 @@ public class InputParser {
      * Method to run for parsing
      * @param fileLocation Location of JSON object in relation to
      */
-    public parse(String fileLocation) {
+    public void parse(String fileLocation) {
         JSONObject jsonObject = buildJSONObject(fileLocation);
     }
 
@@ -33,6 +33,8 @@ public class InputParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return null;
     }
 
 }

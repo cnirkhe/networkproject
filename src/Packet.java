@@ -1,6 +1,4 @@
-abstract public class Packet {
-    public static final int MAX_PAYLOAD;
-    public static final int HEADER_SIZE;
+public abstract class Packet {
 
     public int size;
     public Flow flow;
