@@ -3,9 +3,9 @@ public class UDPPacket extends Packet {
     public static final int HEADER_SIZE = 64;
 //    public PacketType type = UDP_PACKET;
 
-    public UDPPacket(int payload, Flow flow, int id) {
+    public UDPPacket(int payload, int flowId, int id) {
         this.size = payload + HEADER_SIZE;
-        this.flow = flow;
+        this.flowId = flowId;
         this.id = id;
     }
 }

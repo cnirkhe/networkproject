@@ -4,6 +4,16 @@ import java.util.LinkedList;
 public class Host extends Node {
     private int address;
     private Link link;
+    private int linkBufferSize;
+    private int linkId;
+
+    public void print() {
+        System.out.print(address);
+        System.out.print(" ");
+        System.out.print(linkId);
+        System.out.print(" ");
+        System.out.println(linkBufferSize);
+    }
 
     /**
      * Queue of flows out of this host
@@ -24,16 +34,20 @@ public class Host extends Node {
     private HashMap<Packet, Integer> receivingPackets =
             new HashMap<Packet, Integer>();
 
-    public Host(int address, Link link) {
+    public Host(int address, int linkId, int linkBufferSize) {
         this.address = address;
-        this.link = link;
+        // dunno how to actually handle this
+        this.linkId = linkId;
+        this.linkBufferSize = linkBufferSize;
     }
 
 
     // Dummy function for updating. Will eventually change the host based on what happened in
     // one time interval.
     public void update(final int intervalTimeMillis) {
-        // pass
+        System.out.print("Host ");
+        System.out.print(address);
+        System.out.println(" updated");
     }
 
 //    /*

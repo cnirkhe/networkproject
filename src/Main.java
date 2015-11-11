@@ -1,9 +1,16 @@
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-
-        System.out.println("Hello World!");
+        InputParser ip = new InputParser();
+        System.out.println("what");
+        ip.parse("test.json");
+        ArrayList<Host> hosts = ip.extractHosts();
+        ArrayList<Flow> flows = ip.extractFlows();
+        RunSim.run(flows, hosts, 1000, 10000);
+        System.out.println("done");
     }
 }
