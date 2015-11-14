@@ -2,20 +2,22 @@ public class Link {
     private int capacity;               // bits per milli-second
     private float transmissionDelay;    // milli-seconds
     private int id;                     // link id
+    private int cost;
 
     private Node connection_0;
     private Node connection_1;
     
     // constructors
-    public Link(int id, int capacity, float transmissionDelay) {
-        this(id, capacity, transmissionDelay, null, null);
+    public Link(int id, int capacity, float transmissionDelay, int cost) {
+        this(id, capacity, transmissionDelay, null, null, cost);
     }
-    public Link(int id, int capacity, float transmissionDelay, Node node0, Node node1) {
+    public Link(int id, int capacity, float transmissionDelay, Node node0, Node node1, int cost) {
         this.capacity = capacity;
         this.transmissionDelay = transmissionDelay;
         this.id = id;
         connection_0 = node0;
         connection_1 = node1;
+        this.cost = cost;
     }
 
     // private variable accessors and modifiers
@@ -25,12 +27,14 @@ public class Link {
     public float getTransmissionDelay() {
         return this.transmissionDelay;
     }
+    public int getCost() { return this.cost; }
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
     public void setTransmissionDelay(int transmissionDelay) {
         this.transmissionDelay = transmissionDelay;
     }
+    public void setCost(int cost) {this.cost = cost; }
 
     // connection functionality
     public boolean connect(Node node) {
