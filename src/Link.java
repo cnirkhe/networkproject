@@ -36,6 +36,22 @@ public class Link {
     }
     public void setCost(int cost) {this.cost = cost; }
 
+    /**
+     * Returns the node on the other side of the link
+     * If Node n (parameter) is not part of the link, returns null
+     * @param n
+     * @return
+     */
+    public Node getOtherEnd( Node n) {
+        if (connection_0.equals(n)) {
+            return connection_1;
+        } else if (connection_1.equals(n)) {
+            return connection_0;
+        } else {
+            return null;
+        }
+    }
+
     // connection functionality
     public boolean connect(Node node) {
         if (connection_0 == null) {
