@@ -5,7 +5,7 @@ public class TCPPacket extends Packet {
 
     public TCPPacket(int payload, int flowId, int id) {
         this.size = payload + HEADER_SIZE;
-        this.flowId = flowId;
         this.id = id;
+        this.flowId = flowId;
     }
 }

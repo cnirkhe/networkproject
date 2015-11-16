@@ -4,7 +4,7 @@
 		{"address": 13, "link": 3, "linkBufferSize": 5}
 		],
 	"routers" : [
-		{"address": 12, "numLinks" : 2, "links" : [2,3]}
+		{"address": 12, "links" : [2,3]}
 		],
 	"links" : [
 		{"id": 2, "capacity": 10, "transmissionDelay": 5},

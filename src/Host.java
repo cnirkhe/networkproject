@@ -2,7 +2,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Host extends Node {
-    private int address;
     private Link link;
     private int linkBufferSize;
     private int linkId;
@@ -34,10 +33,10 @@ public class Host extends Node {
     private HashMap<Packet, Integer> receivingPackets =
             new HashMap<Packet, Integer>();
 
-    public Host(int address, int linkId, int linkBufferSize) {
+    public Host(int address, int linkId, Link link, int linkBufferSize) {
         this.address = address;
-        // dunno how to actually handle this
         this.linkId = linkId;
+        this.link = link;
         this.linkBufferSize = linkBufferSize;
     }
 

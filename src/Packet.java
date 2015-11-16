@@ -4,4 +4,6 @@ public abstract class Packet {
     public Flow flow;
     public int id;
     public int flowId;
+
+    public int getFlowId() { return this.flowId; }
 }
