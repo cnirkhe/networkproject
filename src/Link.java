@@ -28,10 +28,10 @@ public class Link {
     public float getTransmissionDelay() {
         return this.transmissionDelay;
     }
-    public void setCapacity() {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
-    public void setTransmissionDelay() {
+    public void setTransmissionDelay(int transmissionDelay) {
         this.transmissionDelay = transmissionDelay;
     }
 
