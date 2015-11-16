@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33b1a511-60d4-4c4e-acca-50f6fe5f008a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Flow.java" afterPath="$PROJECT_DIR$/src/Flow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Host.java" afterPath="$PROJECT_DIR$/src/Host.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InputParser.java" afterPath="$PROJECT_DIR$/src/InputParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Link.java" afterPath="$PROJECT_DIR$/src/Link.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/Node.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Packet.java" afterPath="$PROJECT_DIR$/src/Packet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Router.java" afterPath="$PROJECT_DIR$/src/Router.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TCPPacket.java" afterPath="$PROJECT_DIR$/src/TCPPacket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.json" afterPath="$PROJECT_DIR$/test.json" />
     </list>
     <ignored path="networkproject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -562,7 +552,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447226395677</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed some of the input parsing  to connect different objects together instead&#10;of having id fields for the different objects. Elements now have to be extracted in a &#10;certain order, see Main.">
+      <created>1447632946827</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1447632946827</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -633,7 +629,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added in RunSim.run() for running the simulation--schedules updating network parts at regular intervals." />
     <MESSAGE value="Implemented a lot of InputParser (works on test.json) and updated main to read from test.json&#10;and run a &quot;simulation.&quot; Scheduler seems to be working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented a lot of InputParser (works on test.json) and updated main to read from test.json&#10;and run a &quot;simulation.&quot; Scheduler seems to be working." />
+    <MESSAGE value="Changed some of the input parsing  to connect different objects together instead&#10;of having id fields for the different objects. Elements now have to be extracted in a &#10;certain order, see Main." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed some of the input parsing  to connect different objects together instead&#10;of having id fields for the different objects. Elements now have to be extracted in a &#10;certain order, see Main." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
