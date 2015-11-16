@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33b1a511-60d4-4c4e-acca-50f6fe5f008a" name="Default" comment="Implemented a lot of InputParser (works on test.json) and updated main to read from test.json&#10;and run a &quot;simulation.&quot; Scheduler seems to be working.">
+    <list default="true" id="33b1a511-60d4-4c4e-acca-50f6fe5f008a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/networkproject.iml" afterPath="$PROJECT_DIR$/networkproject.iml" />
     </list>
     <ignored path="networkproject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -473,7 +472,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446617540450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed InputParser to connect objects to each other instead of specifying ids for&#10;connected objects. Elements now need to be extracted in a certain order, see&#10;Main.">
+      <created>1447633079088</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1447633079088</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -544,7 +549,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added in RunSim.run() for running the simulation--schedules updating network parts at regular intervals." />
     <MESSAGE value="Implemented a lot of InputParser (works on test.json) and updated main to read from test.json&#10;and run a &quot;simulation.&quot; Scheduler seems to be working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented a lot of InputParser (works on test.json) and updated main to read from test.json&#10;and run a &quot;simulation.&quot; Scheduler seems to be working." />
+    <MESSAGE value="Changed InputParser to connect objects to each other instead of specifying ids for&#10;connected objects. Elements now need to be extracted in a certain order, see&#10;Main." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed InputParser to connect objects to each other instead of specifying ids for&#10;connected objects. Elements now need to be extracted in a certain order, see&#10;Main." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
